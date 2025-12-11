@@ -1,0 +1,20 @@
+{
+  "index": 132.5,
+  "chart_accuracy_exact": 0.03352130325814536,
+  "chart_star_jaccard_main": 0.044924812030075194,
+  "chart_star_jaccard_trans": 0.513471177944862,
+  "chart_star_jaccard_overall": 0.18548872180451106,
+  "daxian_range_iou": 0.33759844353306595,
+  "daxian_ganzhi_accuracy": 0.08662280701754388,
+  "star_palace_pair_precision": 0.16010800951907392,
+  "star_palace_pair_recall": 0.24096665902282907,
+  "star_palace_pair_f1": 0.17978548710995362,
+  "topic_precision": 0.7229547081990695,
+  "topic_recall": 0.746784439453613,
+  "topic_f1": 0.7183974375575671,
+  "cosine_similarity": 0.8641194087222106,
+  "bertscore": 0.7106124375547681,
+  "overall_structural_score": 0.16080781890331675,
+  "overall_interpretation_content_score": 0.44909146233376035,
+  "overall_text_similarity_score": 0.7873659231384894
+}

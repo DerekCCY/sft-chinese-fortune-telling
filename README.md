@@ -208,7 +208,8 @@ Produces:
 ## 8. Training
 
 ```bash
-python training/ft.py
+cd training
+python ft.py
 ```
 
 ---
@@ -218,9 +219,10 @@ python training/ft.py
 ### **9.1 Without RAG**
 
 ```bash
-python inference/inference.py \
-    --data_file training/data/test.jsonl \
-    --output_file inference/outputs/test_predictions.jsonl \
+cd inference
+python inference.py \
+    --data_file data/test.jsonl \
+    --output_file outputs/test_predictions.jsonl \
     --max_new_tokens 2048 \
     --use_lora
 ```
@@ -230,23 +232,24 @@ python inference/inference.py \
 #### 1. Build RAG corpus
 
 ```bash
-python inference/build_rag.py
+cd inference
+python build_rag.py
 ```
 
 #### 2. Build RAG index
 
 ```bash
-python inference/rag_build_index.py
+python rag_build_index.py
 ```
 
 #### 3. RAG inference
 
 ```bash
-python inference/rag_inference.py \
-    --data_file training/data/test.jsonl \
-    --knowledge_file inference/rag/rag.jsonl \
-    --output_file inference/outputs/prediction_sft_rag.jsonl \
+python rag_inference.py \
+    --data_file data/test.jsonl \
+    --knowledge_file rag/rag.jsonl \
+    --output_file outputs/prediction_sft_rag.jsonl \
     --max_new_tokens 2048 \
-    --rag_log_file inference/outputs/sft_rag_log.jsonl
+    --rag_log_file outputs/sft_rag_log.jsonl
 ```
 

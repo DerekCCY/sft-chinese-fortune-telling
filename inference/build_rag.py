@@ -9,7 +9,7 @@ BOOK_FILES = [
 ]
 
 # output path
-OUTPUT_DIR = "rag_corpus"
+OUTPUT_DIR = "rag"
 OUTPUT_PATH = os.path.join(OUTPUT_DIR, "rag.jsonl")
 
 # chunk size setting

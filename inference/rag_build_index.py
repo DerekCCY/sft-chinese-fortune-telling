@@ -4,8 +4,8 @@ import faiss
 from sentence_transformers import SentenceTransformer
 
 # paths
-CORPUS_PATH = "rag/rag_corpus/rag.jsonl"
-INDEX_DIR = "rag_index"
+CORPUS_PATH = "rag/rag.jsonl"
+INDEX_DIR = "rag"
 os.makedirs(INDEX_DIR, exist_ok=True)
 
 INDEX_PATH = os.path.join(INDEX_DIR, "rag_index.faiss")
